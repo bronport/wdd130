@@ -1,0 +1,109 @@
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+nav a {
+  text-align: center;
+  color: white; /* makes links visible on blue header background */
+  text-decoration: none; /* removes underline */
+}
+
+nav a:hover {
+  background-color: #79ecf2;
+  color: #000; /* black text for contrast on hover */
+  text-decoration: underline; /* underline on hover */
+}
+
+#hero-msg h1,
+#hero-msg h4 {
+  text-align: center;
+  color: #2d8ed9; /* primary blue title text */
+}
+
+.button-box {
+  text-align: center;
+}
+
+main section {
+  text-align: center;
+}
+
+/* IMAGE WIDTHS */
+.logo {
+  width: 80px;
+}
+
+.icon {
+  width: 80px;
+}
+
+#hero-img {
+  width: 100%;
+}
+
+/* PAGE BACKGROUND */
+body {
+  background-color: #fcfbfb;
+  color: #5c5c5c; /* dark text for readability */
+}
+
+/* HEADER (transparent tint so hero shows through) */
+header {
+  background-color: rgba(45, 142, 217, 0.7);
+}
+
+/* BUTTONS */
+.book, .join {
+  background-color: #2d8ed9;
+  color: white;
+  text-decoration: none; /* removes underline */
+}
+
+.book:hover, .join:hover {
+  background-color: #79ecf2;
+  color: #000;
+  text-decoration: underline; /* underline on hover */
+}
+
+/* BACKGROUND DIV */
+#background {
+  background-color: #ebe0a7;
+  height: 725px;
+}
+
+/* MESSAGE SECTION */
+.msg {
+  background-color: white;
+  color: #5c5c5c;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.msg h2 {
+  color: #2d8ed9;
+}
+
+.msg p {
+  color: #5c5c5c;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2d8ed9;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none; /* removes underline */
+}
+
+footer p a:hover {
+  color: #79ecf2;
+  text-decoration: underline; /* underline on hover */
+}
+
+footer p {
+  font-size: 1.2em; /* larger footer text */
+}
