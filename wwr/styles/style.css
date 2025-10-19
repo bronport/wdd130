@@ -263,3 +263,13 @@ footer {
 #background {
   height: 300px; /* shorten tan section */
 }
+.rivers-card .icon,
+.camping-card .icon,
+.rapids-card .icon {
+  right: -20px; /* was -28px, move slightly closer */
+  top: 45%;     /* centers better visually */
+  width: 30px;
+}
+#hero-msg {
+  background: rgba(252, 251, 251, 0.8);
+}
