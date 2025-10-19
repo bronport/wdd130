@@ -158,3 +158,99 @@ footer p a:hover {
 }
 
 footer p { font-size: 1.2em; }
+
+/* === Make header/footer bars match the sample demo === */
+header, footer {
+  background-color: #6f7364;     /* sample’s green-gray bar */
+  color: #fff;
+}
+
+/* === HERO: overlay the title/button on the image === */
+#hero { position: relative; }
+#hero-msg {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  gap: .75rem;
+  background: rgba(252, 251, 251, 0.9);
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+}
+#hero-msg h4 { margin: 0; }
+
+/* === HOME GRID like the example === */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: minmax(10px, auto);
+  align-items: start;
+  gap: 30px;
+  margin: 40px auto;
+  width: min(1100px, 92%);
+}
+
+/* Tan band behind the three cards */
+#background {
+  grid-column: 1 / -1;
+  grid-row: 1 / 4;
+  height: 360px;                 /* shorter, like the sample */
+  background-color: #EBD9BD;     /* close to sample tan; your #EBE0A7 is fine too */
+}
+
+/* Three feature cards in a row */
+.rivers-card   { grid-column: 2 / span 3; grid-row: 2; }
+.camping-card  { grid-column: 5 / span 3; grid-row: 2; }
+.rapids-card   { grid-column: 8 / span 3; grid-row: 2; }
+
+/* Card image styling to match the look */
+.card-img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border: 10px solid #EBE0A7;    /* your accent */
+  border-radius: 0;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.05);
+}
+
+/* Put the little icons to the right of each card image */
+.rivers-card, .camping-card, .rapids-card { position: relative; }
+.rivers-card .icon,
+.camping-card .icon,
+.rapids-card .icon {
+  position: absolute;
+  right: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;                   /* smaller like sample */
+  padding-top: 0;                /* cancel earlier padding */
+}
+
+/* Mountains image on left; message box on right, same row */
+.mountains {
+  grid-column: 2 / span 5;       /* left side */
+  grid-row: 3;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.msg {
+  grid-column: 7 / span 3;       /* right side */
+  grid-row: 3;
+  text-align: center;
+  background-color: #6f7364;     /* sample uses dark box */
+  color: white;
+  padding: 35px;
+  border-radius: 0;
+}
+.msg h2 { color: white; }
+.msg p  { color: white; }
+
+/* Footer spacing like sample */
+footer {
+  margin-top: 60px;
+}
+
