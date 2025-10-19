@@ -1,109 +1,160 @@
+/* ===== 1) GOOGLE FONTS: MUST be at the very top of THIS file ===== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+
+/* ===== 2) Simple Reset + Base ===== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  background-color: #fcfbfb;
+  color: #5c5c5c;
+  font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; /* body font + fallbacks */
+  font-size: 22px;   /* assignment */
+  line-height: 1.4;
+  margin: 0;         /* reset */
+  padding: 0;        /* reset */
+}
+
+h2 { margin: 0; }    /* assignment reset */
+
+/* ===== 3) Layout Wrappers ===== */
 #content {
   max-width: 1600px;
   margin: 0 auto;
 }
 
-nav a {
-  text-align: center;
-  color: white; /* makes links visible on blue header background */
-  text-decoration: none; /* removes underline */
-}
-
-nav a:hover {
-  background-color: #79ecf2;
-  color: #000; /* black text for contrast on hover */
-  text-decoration: underline; /* underline on hover */
-}
-
-#hero-msg h1,
-#hero-msg h4 {
-  text-align: center;
-  color: #2d8ed9; /* primary blue title text */
-}
-
-.button-box {
-  text-align: center;
-}
-
-main section {
-  text-align: center;
-}
-
-/* IMAGE WIDTHS */
-.logo {
-  width: 80px;
-}
-
-.icon {
-  width: 80px;
-}
-
-#hero-img {
-  width: 100%;
-}
-
-/* PAGE BACKGROUND */
-body {
-  background-color: #fcfbfb;
-  color: #5c5c5c; /* dark text for readability */
-}
-
-/* HEADER (transparent tint so hero shows through) */
+/* ===== 4) Header / Nav ===== */
 header {
   background-color: rgba(45, 142, 217, 0.7);
 }
 
-/* BUTTONS */
-.book, .join {
-  background-color: #2d8ed9;
-  color: white;
-  text-decoration: none; /* removes underline */
+#logo_link { padding-top: 5px; }             /* assignment padding */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* keep links touching unless you want space */
 }
 
-.book:hover, .join:hover {
+nav a {
+  text-align: center;
+  color: #fff;                 /* visible on blue */
+  text-decoration: none;       /* remove underline */
+  padding: 35px;               /* assignment padding */
+  min-width: 120px;            /* matches site-plan feel */
+}
+
+nav a:hover {
   background-color: #79ecf2;
   color: #000;
-  text-decoration: underline; /* underline on hover */
+  text-decoration: underline;
 }
 
-/* BACKGROUND DIV */
+/* ===== 5) Hero ===== */
+#hero-msg h1,
+#hero-msg h4 {
+  text-align: center;
+  color: #2d8ed9;
+}
+
+.button-box { text-align: center; }
+
+#hero-img { width: 100%; display: block; }
+
+/* ===== 6) Images / Icons ===== */
+.logo { width: 80px; display: block; }
+.icon { width: 80px; padding-top: 10px; }    /* assignment padding */
+
+/* Image borders / sizing per assignment */
+.card-img {
+  border: 10px solid #EBE0A7;   /* use your accent1 color */
+  border-radius: 4px;           /* optional nicety */
+}
+
+main section img {
+  box-sizing: border-box;       /* include border in size (assignment) */
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== 7) Typography: Headlines vs Body ===== */
+/* Use Story Script just for specific headlines (assignment asks for 2) */
+.home-title,
+.msg h2 {
+  font-family: "Story Script", "Bradley Hand", "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Sizes per assignment */
+.home-title {                   /* one of your two headline spots */
+  font-size: 2em;               /* 2× body (44px) */
+  margin-top: 10px;             /* assignment margin */
+}
+.msg h2 {
+  font-size: 1.6em;
+}
+
+/* Buttons text size per assignment */
+.book, .join { font-size: 18px; }
+
+/* Paragraphs inside .msg smaller per assignment */
+.msg p { font-size: 0.8em; }
+
+/* ===== 8) Sections / Blocks ===== */
+main section { text-align: center; }
+
 #background {
   background-color: #ebe0a7;
   height: 725px;
 }
 
-/* MESSAGE SECTION */
 .msg {
-  background-color: white;
+  background-color: #fff;
   color: #5c5c5c;
-  padding: 2rem;
-  border-radius: 10px;
+  padding: 35px;               /* assignment padding */
+  line-height: 1.5em;          /* assignment line-height */
 }
 
-.msg h2 {
-  color: #2d8ed9;
+.msg p { padding-bottom: 15px; } /* assignment padding */
+
+/* ===== 9) Buttons ===== */
+.book, .join {
+  background-color: #2d8ed9;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;          /* assignment padding */
+  margin-top: 50px;            /* assignment margin */
+  border-radius: 5px;          /* assignment border-radius */
 }
 
-.msg p {
-  color: #5c5c5c;
+.book:hover, .join:hover {
+  background-color: #79ecf2;
+  color: #000;
+  text-decoration: underline;
 }
 
-/* FOOTER */
+/* ===== 10) Cards / Grid spacing per assignment ===== */
+.rivers-card,
+.camping-card,
+.rapids-card { margin: 200px 0; }  /* assignment margin */
+
+/* ===== 11) Footer ===== */
 footer {
   background-color: #2d8ed9;
-  color: white;
+  color: #fff;
+  padding: 25px 50px;          /* assignment padding */
+  margin-top: 200px;           /* assignment margin */
 }
 
 footer a {
-  color: white;
-  text-decoration: none; /* removes underline */
+  color: #fff;
+  text-decoration: none;
 }
 
 footer p a:hover {
   color: #79ecf2;
-  text-decoration: underline; /* underline on hover */
+  text-decoration: underline;
 }
 
-footer p {
-  font-size: 1.2em; /* larger footer text */
-}
+footer p { font-size: 1.2em; }
