@@ -1,0 +1,69 @@
+/* ============== Activity 1 styles ============== */
+.content1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 20px;
+}
+.red1, .blue1 { width: 100%; height: 100px; }
+.green1, .yellow1 { width: 200px; height: 200px; }
+.red1  { background: red;  grid-column: 1 / 3; }
+.green1{ background: green; }
+.yellow1{ background: gold; }
+.blue1 { background: blue; grid-column: 1 / 3; }
+
+/* ============== Activity 2 styles ============== */
+.content2 {}
+.red2, .green2, .yellow2, .blue2 { width: 100px; height: 100px; }
+.red2   { background: red; }
+.green2 { background: green;  margin-left: 50px;  margin-top: -50px; }
+.yellow2{ background: gold;   margin-left: 100px; margin-top: -50px; }
+.blue2  { background: blue;   margin-left: 150px; margin-top: -50px; }
+
+/* ============== Activity 3 styles ============== */
+.content3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.red3, .blue3 { width: 100%; height: 100px; grid-column: 1 / 3; }
+.green3, .yellow3 { width: 100%; height: 200px; }
+.red3   { background: red; }
+.green3 { background: green; }
+.yellow3{ background: gold; }
+.blue3  { background: blue; }
+
+/* ============== Activity 4 styles ============== */
+.content4{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 400px;
+}
+.red4, .green4, .yellow4, .blue4 { width: 100%; height: auto; }
+.red4   { background: red;   grid-column: 1; grid-row: 1 / span 3; }
+.green4 { background: green; grid-column: 2; grid-row: 1; }
+.yellow4{ background: gold;  grid-column: 2; grid-row: 2; }
+.blue4  { background: blue;  grid-column: 2; grid-row: 3; }
+
+/* ============== Activity 5 styles ============== */
+.content5{ height: 400px; }
+.red5, .blue5 { width: 100%; height: 100px; }
+.red5   { background: red; }
+.green5 { background: green; width: 200px; height: 200px; float: left; margin: 0 15px 15px 0; }
+.yellow5{ background: gold; padding: 10px; overflow: auto; }
+.blue5  { background: blue; clear: both; }
+
+/* ============== Activity 6 styles ============== */
+.content6{
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(6, 100px);
+}
+.red6, .green6, .yellow6, .blue6 { width: 100%; height: 100%; }
+
+.red6   { background: red;   grid-column: 1 / span 4; grid-row: 1 / span 2; z-index: 1; }
+.blue6  { background: blue;  grid-column: 2 / span 4; grid-row: 2 / span 4; z-index: 2; }
+.yellow6{ background: gold;  grid-column: 5 / span 2; grid-row: 2 / span 5; z-index: 3; }
+.green6 { background: green; grid-column: 1 / span 2; grid-row: 4 / span 2; z-index: 1; }
