@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Athlete Compare • Site Plan</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site-plan.css" />
+</head>
+<body>
+  <header>
+    <h1>Athlete Compare — Site Plan</h1>
+    <p class="byline">Author: Porter Bronson • Course: WDD130</p>
+  </header>
+
+  <main>
+    <!-- ========================
+         OVERVIEW
+    ========================= -->
+    <section id="overview">
+      <h2>Overview</h2>
+
+      <h3>Site Name</h3>
+      <p><strong>Athlete Compare</strong> (folder: <code>athlete-compare</code>)</p>
+
+      <h3>Purpose</h3>
+      <p>
+        Athlete Compare helps fans quickly stack two professional athletes side-by-side using clear stats,
+        awards, and context. The goal is to make comparisons fast, visual, and fair—so debates feel informed,
+        not heated.
+      </p>
+
+      <h3>Audience</h3>
+      <p>
+        Sports fans, students, and casual analysts (teens to adults) who want simple, trustworthy, and visual
+        comparisons across major sports (NBA, NFL, MLB, etc.). Mobile-first design for on-the-couch browsing,
+        but great on desktop too.
+      </p>
+
+      <h3>Elevator Pitch (2–3 sentences)</h3>
+      <p>
+        Athlete Compare is a clean, interactive way to put two pros head-to-head. See the metrics that matter,
+        from per-game stats and efficiency to accolades and longevity—then decide who truly comes out on top.
+      </p>
+    </section>
+
+    <!-- ========================
+         BRANDING
+    ========================= -->
+    <section id="branding">
+      <h2>Branding</h2>
+
+      <h3>Logo</h3>
+      <p>
+        Temporary text mark: <strong>Athlete Compare</strong>. Final logo will be a simple “AC” monogram with a subtle
+        trophy/stopwatch motif. (Created in Canva/Adobe Express.)
+      </p>
+      <div class="logo-box">AC</div>
+
+      <h3>Color Palette</h3>
+      <ul class="swatches">
+        <li><span style="--sw:#0b3d91"></span><code>#0B3D91</code> — Navy (Primary)</li>
+        <li><span style="--sw:#111111"></span><code>#111111</code> — Near-Black (Text)</li>
+        <li><span style="--sw:#fdb927"></span><code>#FDB927</code> — Gold (Accent/CTA)</li>
+        <li><span style="--sw:#e9eef6"></span><code>#E9EEF6</code> — Light Background</li>
+        <li><span style="--sw:#6b7280"></span><code>#6B7280</code> — Neutral Gray (UI)</li>
+      </ul>
+
+      <h3>Typography</h3>
+      <p>
+        <strong>Headings:</strong> Oswald (600) — bold, sports-style<br/>
+        <strong>Body:</strong> Inter (400/600) — highly readable UI font
+      </p>
+    </section>
+
+    <!-- ========================
+         NAVIGATION
+    ========================= -->
+    <section id="navigation">
+      <h2>Navigation</h2>
+      <nav class="nav-preview">
+        <a href="#">Home</a>
+        <a href="#">Compare</a>
+        <a href="#">About / Methodology</a>
+      </nav>
+      <p>
+        The personal site will have a home page and two child pages:
+        <em>Compare</em> and <em>About/Methodology</em>.
+      </p>
+    </section>
+
+    <!-- ========================
+         CONTENT
+    ========================= -->
+    <section id="content">
+      <h2>Content</h2>
+
+      <article>
+        <h3>Home (index.html)</h3>
+        <ul>
+          <li>Hero statement: “Compare athletes in seconds.” Short CTA button → <em>Start Comparing</em>.</li>
+          <li>How it works (3 steps): Choose sport → Pick two athletes → View visual head-to-head.</li>
+          <li>Sample comparison card (static): shows how results will look.</li>
+          <li>Notes on data: educational, fair-use text; no team logos; use royalty-free player photos or silhouettes.</li>
+        </ul>
+        <p><strong>Planned image(s):</strong> abstract sports collage or silhouette; small stat icons.</p>
+      </article>
+
+      <article>
+        <h3>Compare (compare.html)</h3>
+        <ul>
+          <li>Form UI: sport dropdown, two athlete fields (typeahead later), “Compare” button.</li>
+          <li>Comparison grid: per-game stats, efficiency (e.g., PER/TS% if basketball), accolades (MVP, All-Star), career length.</li>
+          <li>Simple charts (static for class): bars for key stats, badges for awards.</li>
+          <li>Accessibility notes: high contrast labels, table with captions for screen readers.</li>
+        </ul>
+        <p><strong>Planned image(s):</strong> simple SVG icons for stats/awards.</p>
+      </article>
+
+      <article>
+        <h3>About / Methodology (about.html)</h3>
+        <ul>
+          <li>Explain metrics and why they matter; define terms.</li>
+          <li>Data ethics: avoid copyrighted team logos; use public/royalty-free photos or self-made charts.</li>
+          <li>Limitations: small samples, era differences; how to interpret results.</li>
+          <li>Contact link or short credit section.</li>
+        </ul>
+        <p><strong>Planned image(s):</strong> methodology graphic or icons (scales, stopwatch, chart).</p>
+      </article>
+    </section>
+
+    <!-- ========================
+         WIREFRAMES (placeholders)
+    ========================= -->
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+
+      <h3>Home Wireframe</h3>
+      <p>Hero with headline/CTA, three “how it works” steps, sample comparison card, footer.</p>
+      <img src="images/wf-home.jpg" alt="Home wireframe placeholder (add later)" />
+
+      <h3>Compare Wireframe</h3>
+      <p>Form across top, comparison grid below with stat rows and mini bar charts.</p>
+      <img src="images/wf-compare.jpg" alt="Compare wireframe placeholder (add later)" />
+
+      <h3>About/Methodology Wireframe</h3>
+      <p>Two-column text blocks with icons; callouts for definitions; contact link in footer.</p>
+      <img src="images/wf-about.jpg" alt="About wireframe placeholder (add later)" />
+    </section>
+
+    <!-- ========================
+         TECH NOTES
+    ========================= -->
+    <section id="tech">
+      <h2>Technical Notes</h2>
+      <ul>
+        <li>Mobile-first CSS with grid/flex; readable line length; WCAG AA contrast.</li>
+        <li>Images: use personal graphics, silhouettes, or royalty-free stock; keep file sizes small.</li>
+        <li>No external team/league logos to avoid trademark issues.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Athlete Compare — Site Plan</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
