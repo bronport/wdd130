@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athlete Compare | Home</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Athlete Compare</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="jordan.html">Michael Jordan</a>
+      <a href="lebron.html">LeBron James</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Jordan vs. LeBron</h1>
+        <p>
+          A simple, readable comparison site that highlights achievements, key stats,
+          and career impact—so you can form an informed opinion without the noise.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn" href="jordan.html">View Jordan</a>
+          <a class="btn btn-outline" href="lebron.html">View LeBron</a>
+        </div>
+      </div>
+
+      <img class="hero-img" src="images/court.jpg" alt="A basketball court background image" />
+    </section>
+
+    <!-- HOW IT WORKS (3 boxes) -->
+    <section class="section">
+      <h2>How to Use This Site</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>1) Pick an Athlete</h3>
+          <p>Choose Michael Jordan or LeBron James using the navigation links above.</p>
+        </article>
+
+        <article class="card">
+          <h3>2) Read the Same 3 Sections</h3>
+          <p>Each athlete page uses the same structure: Achievements, Stats, and Play Style & Legacy.</p>
+        </article>
+
+        <article class="card">
+          <h3>3) Compare Fairly</h3>
+          <p>Remember that era, team role, and play style affect numbers. Use context with the stats.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUICK NOTE / DISCLAIMER -->
+    <section class="section note">
+      <h2>Fair Comparison Reminder</h2>
+      <p>
+        This site is meant to be educational and easy to read. Basketball has changed across eras,
+        so it’s important to compare both accomplishments and context—not just one stat.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Athlete Compare • Porter Bronson</p>
+    <p><a href="site-plan.html">View Site Plan</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

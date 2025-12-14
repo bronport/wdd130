@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athlete Compare | Michael Jordan</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Athlete Compare</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="jordan.html">Michael Jordan</a>
+      <a href="lebron.html">LeBron James</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO / INTRO -->
+    <section class="page-hero">
+      <div>
+        <h1>Michael Jordan</h1>
+        <p>
+          Widely considered one of the greatest competitors in sports history, Jordan’s legacy is built on
+          winning, scoring dominance, and elite two-way impact.
+        </p>
+      </div>
+      <img class="page-hero-img" src="images/jordan.jpg" alt="Michael Jordan themed image or silhouette" />
+    </section>
+
+    <!-- SECTION 1: ACHIEVEMENTS -->
+    <section class="section">
+      <h2>Career Achievements</h2>
+      <ul class="bullets">
+        <li>Championships, Finals MVPs, MVPs, All-Star appearances (add your exact list here).</li>
+        <li>Defensive honors and scoring titles (add details here).</li>
+        <li>Key career milestones that support his “greatest” argument.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 2: STATS -->
+    <section class="section">
+      <h2>Key Statistics</h2>
+      <p>
+        Include the most meaningful stats that are easy for anyone to understand (per-game + efficiency).
+        You can present them as a simple table.
+      </p>
+
+      <table class="stats-table">
+        <caption>Jordan — Quick Stats (example)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Points Per Game</td><td>—</td></tr>
+          <tr><td>Rebounds Per Game</td><td>—</td></tr>
+          <tr><td>Assists Per Game</td><td>—</td></tr>
+          <tr><td>Field Goal %</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION 3: PLAY STYLE & LEGACY -->
+    <section class="section">
+      <h2>Play Style & Legacy</h2>
+      <p>
+        Explain what the stats don’t fully capture: competitiveness, defense, midrange scoring, leadership,
+        and cultural impact. Mention era context briefly (rules, pace, spacing).
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Athlete Compare • Porter Bronson</p>
+    <p><a href="site-plan.html">View Site Plan</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
