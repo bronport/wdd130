@@ -109,3 +109,42 @@ footer{
   color:var(--ui);
   margin-top:2rem;
 }
+
+/* =========================
+   Content readability upgrades
+========================= */
+
+/* Keep long text comfortable to read */
+article{
+  margin-top: 1rem;
+}
+
+article p{
+  max-width: 72ch;          /* ideal line length for reading */
+  margin: .75rem 0;         /* more breathing room between paragraphs */
+  color: var(--ink-dim);
+}
+
+/* Make the paragraph-topic label pop */
+article p strong{
+  display: inline-block;
+  color: var(--ink);
+  font-weight: 700;
+  background: var(--wash);
+  padding: .15rem .45rem;
+  border-radius: .35rem;
+  margin-bottom: .25rem;
+}
+
+/* Make the Planned image line less heavy */
+article p:last-child{
+  color: var(--ui);
+  font-size: .95rem;
+}
+
+/* Improve spacing around the content section */
+#content article + article{
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e5e7eb;
+}
