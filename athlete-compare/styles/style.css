@@ -217,3 +217,8 @@ body{
   .hero, .page-hero{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
 }
+.hero-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
