@@ -4,11 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Athlete Compare | LeBron James</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- IMPORTANT: match whatever you use on your other pages -->
   <link rel="stylesheet" href="styles/style.css" />
 </head>
+
 <body>
   <header class="site-header">
-    <a class="logo" href="index.html">Athlete Compare</a>
+    <a class="logo" href="index.html" aria-label="Athlete Compare Home">
+      Athlete Compare
+    </a>
+
     <nav class="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="jordan.html">Michael Jordan</a>
@@ -22,64 +31,80 @@
       <div>
         <h1>LeBron James</h1>
         <p>
-          Known for all-around impact, playmaking, and longevity, LeBron’s case is built on versatility,
-          sustained excellence, and elite production across many seasons.
+          LeBron is known for elite all-around skill, long-term consistency, and
+          leadership across multiple teams and eras of the NBA.
         </p>
       </div>
-      <img class="page-hero-img" src="images/lebron.jpg" alt="LeBron James themed image or silhouette" />
+
+      <img class="page-hero-img" src="images/lebron.jpg" alt="LeBron James themed image" />
     </section>
 
-    <!-- SECTION 1: ACHIEVEMENTS -->
+    <!-- INFO ABOUT THE ATHLETE -->
     <section class="section">
-      <h2>Career Achievements</h2>
-      <ul class="bullets">
-        <li>Championships, MVPs, All-Star appearances (add your exact list here).</li>
-        <li>All-NBA selections and major records/milestones (add details).</li>
-        <li>Longevity and consistency highlights.</li>
-      </ul>
+      <h2>About LeBron James</h2>
+      <div class="note">
+        <p>
+          LeBron James is often described as one of the most complete players in
+          basketball history. His combination of size, skill, and court vision has
+          made him effective as both a scorer and playmaker.
+        </p>
+        <p>
+          Many fans and analysts emphasize his longevity, adaptability, and ability
+          to elevate teammates as a major part of his legacy.
+        </p>
+      </div>
     </section>
 
-    <!-- SECTION 2: STATS -->
+    <!-- THREE-COLUMN GRID -->
     <section class="section">
-      <h2>Key Statistics</h2>
-      <p>
-        Focus on stats that show scoring + playmaking + overall impact. Keep it readable and consistent with Jordan’s layout.
-      </p>
+      <div class="cards">
+        <!-- Achievements -->
+        <div class="card">
+          <h3>Achievements</h3>
+          <ul class="bullets">
+            <li>4× NBA Champion</li>
+            <li>4× MVP</li>
+            <li>Multiple Finals appearances</li>
+            <li>Known for elite playmaking</li>
+          </ul>
+        </div>
 
-      <table class="stats-table">
-        <caption>LeBron — Quick Stats (example)</caption>
-        <thead>
-          <tr>
-            <th scope="col">Category</th>
-            <th scope="col">Value</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Points Per Game</td><td>—</td></tr>
-          <tr><td>Rebounds Per Game</td><td>—</td></tr>
-          <tr><td>Assists Per Game</td><td>—</td></tr>
-          <tr><td>Field Goal %</td><td>—</td></tr>
-        </tbody>
-      </table>
+        <!-- Stats -->
+        <div class="card">
+          <h3>Stats</h3>
+          <p><strong>PPG:</strong> 27.1</p>
+          <p><strong>RPG:</strong> 7.5</p>
+          <p><strong>APG:</strong> 7.4</p>
+          <p><strong>Seasons:</strong> 20+</p>
+        </div>
+
+        <!-- Career Impact -->
+        <div class="card">
+          <h3>Career Impact</h3>
+          <p>
+            LeBron helped define modern positionless basketball by impacting the game
+            in every category. His influence also includes leadership, community work,
+            and shaping athlete branding in the modern era.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- SECTION 3: PLAY STYLE & LEGACY -->
+    <!-- LINK BACK TO JORDAN (nice touch for usability) -->
     <section class="section">
-      <h2>Play Style & Legacy</h2>
-      <p>
-        Describe versatility (scoring, passing, defending), leadership, durability, and how modern spacing/pace affects the game.
-        Keep the tone fair and informative.
-      </p>
+      <h2>Compare with Jordan</h2>
+      <p>Go back to Jordan’s page to compare the same categories.</p>
+      <a class="btn" href="jordan.html">Go to Jordan’s Page</a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Athlete Compare • Porter Bronson</p>
-    <p><a href="site-plan.html">View Site Plan</a></p>
+    <p>© 2025 Athlete Compare | <a href="site-plan.html">Site Plan</a></p>
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // Only keep this if you used it on other pages too
+    // document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
