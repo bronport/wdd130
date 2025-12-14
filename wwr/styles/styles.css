@@ -273,3 +273,59 @@ footer {
 #hero-msg {
   background: rgba(252, 251, 251, 0.8);
 }
+
+/* ==========================
+   Rivers Subpage Styles
+========================== */
+
+.rivers-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.rivers-intro {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.rivers-hero img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.trip-description,
+.what-to-bring {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.trip-description img,
+.what-to-bring img {
+  width: 100%;
+  height: auto;
+}
+
+.rivers-cta {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #6f7364;
+  color: white;
+}
+
+.rivers-cta h2 {
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .trip-description,
+  .what-to-bring {
+    grid-template-columns: 1fr;
+  }
+}
