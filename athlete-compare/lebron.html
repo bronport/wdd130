@@ -91,9 +91,15 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Athlete Compare | <a href="site-plan.html">Site Plan</a></p>
-  </footer>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Athlete Compare • Porter Bronson</p>
+  <p><a href="site-plan.html">View Site Plan</a></p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
   <script>
     // Only keep this if you used it on other pages too
