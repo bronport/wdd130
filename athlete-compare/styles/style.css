@@ -283,3 +283,67 @@ body{
 @media (max-width: 900px){
   .wide{ grid-template-columns:1fr; }
 }
+/* ===== Fix class mismatch (HTML uses hero-actions) ===== */
+.hero-actions{
+  display:flex;
+  gap:.75rem;
+  flex-wrap:wrap;
+}
+
+/* ===== Home page wrapper (HTML uses home-grid) ===== */
+.home-grid{
+  width:min(980px, 92%);
+  margin:0 auto;
+  padding:1.25rem 0 2rem;
+  display:grid;
+  gap:1rem;
+}
+
+/* ===== Make the 3 cards line up in a grid like your wireframe ===== */
+@media (min-width: 901px){
+  .home-grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "hero hero hero"
+      "c1   c2   c3"
+      "wide wide wide";
+  }
+
+  .hero{ grid-area: hero; }
+  .card-1{ grid-area: c1; }
+  .card-2{ grid-area: c2; }
+  .card-3{ grid-area: c3; }
+  .wide{ grid-area: wide; }
+}
+
+/* ===== Make card headings match your site style ===== */
+.card h2{
+  font-family: Oswald, Impact, sans-serif;
+  color:var(--navy);
+  margin:0 0 .25rem;
+}
+
+/* ===== Wide section styling (HTML uses wide / wide-img) ===== */
+.wide{
+  display:grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap:1.25rem;
+  align-items:center;
+  padding:1rem;
+  border:1px solid var(--border);
+  border-radius:1rem;
+  background:#fff;
+}
+
+.wide-img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:.8rem;
+  border:1px solid var(--border);
+}
+
+/* Mobile: wide stacks */
+@media (max-width: 900px){
+  .wide{ grid-template-columns: 1fr; }
+}
