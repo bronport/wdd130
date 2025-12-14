@@ -377,7 +377,10 @@ body{
 
 .wide-img{
   width: 100%;
-  height: 260px;      /* match your box height */
-  object-fit: contain; /* fits entire image inside */
+  height: 260px;
+  object-fit: contain;
   display: block;
+  border: none;        /* removes rectangle */
+  border-radius: 0;   /* removes rounded corners */
+  background: none;   /* ensures no box background */
 }
